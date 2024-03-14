@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    var taskList: [TaskModel] = [
+        TaskModel(title: "Task1", desc: "sdfasdfasdf", status: .todo),
+        TaskModel(title: "Task2", desc: "sdfasdfasdf", status: .todo),
+        TaskModel(title: "Task3", desc: "sdfasdfasdf", status: .todo),
+        TaskModel(title: "Task4", desc: "sdfasdfasdf", status: .todo)
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(taskList) { item in
+                NavigationLink(value: item) {
+                    TaskItemView(item: item)
+                }
+            }
+            .navigationDestination(for: TaskModel.self) { item in
+                TaskDetails(taskModel: item)
+            }
+            .navigationTitle(Text("Tasker"))
         }
-        .padding()
     }
 }
 
