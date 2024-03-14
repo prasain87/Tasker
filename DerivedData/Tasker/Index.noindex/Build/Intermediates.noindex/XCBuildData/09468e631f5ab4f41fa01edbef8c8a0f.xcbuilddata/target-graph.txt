@@ -1,0 +1,13 @@
+Target dependency graph (8 targets)
+Target 'TaskerUITests' in project 'Tasker' (no dependencies)
+Target 'TaskerUITests' in project 'Tasker'
+➜ Explicit dependency on target 'Tasker' in project 'Tasker'
+Target 'TaskerUITests' in project 'Tasker'
+➜ Explicit dependency on target 'Tasker' in project 'Tasker'
+Target 'TaskerTests' in project 'Tasker' (no dependencies)
+Target 'TaskerTests' in project 'Tasker'
+➜ Explicit dependency on target 'Tasker' in project 'Tasker'
+Target 'TaskerTests' in project 'Tasker'
+➜ Explicit dependency on target 'Tasker' in project 'Tasker'
+Target 'Tasker' in project 'Tasker' (no dependencies)
+Target 'Tasker' in project 'Tasker' (no dependencies)

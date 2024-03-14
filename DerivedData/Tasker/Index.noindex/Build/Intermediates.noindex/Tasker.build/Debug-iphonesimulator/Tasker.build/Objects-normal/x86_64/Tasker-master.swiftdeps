@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "8c82b716354a98f3d9cc7ff4eb0c145e8e0fc4353f0d82aa8493b0b520ad86bb"
+build_start_time: [1710412973, 931354000]
+build_end_time: [1710412973, 939393000]
+inputs:
+  ? "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-iphonesimulator/Tasker.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : !dirty [1710412947, 96625399]
+  "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/Tasker/ContentView.swift": !dirty [1710412908, 561310987]
+  "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/Tasker/TaskerApp.swift": !dirty [1710412908, 551887989]

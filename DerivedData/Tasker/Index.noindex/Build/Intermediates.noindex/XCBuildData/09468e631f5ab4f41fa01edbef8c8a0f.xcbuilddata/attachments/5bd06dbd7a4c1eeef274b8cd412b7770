@@ -1,0 +1,12 @@
+{
+  "" : {
+    "dependencies" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-maccatalyst/TaskerTests.build/Objects-normal/x86_64/TaskerTests-master.d",
+    "diagnostics" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-maccatalyst/TaskerTests.build/Objects-normal/x86_64/TaskerTests-master.dia",
+    "emit-module-dependencies" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-maccatalyst/TaskerTests.build/Objects-normal/x86_64/TaskerTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-maccatalyst/TaskerTests.build/Objects-normal/x86_64/TaskerTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/Tasker.build/Debug-maccatalyst/TaskerTests.build/Objects-normal/x86_64/TaskerTests-master.swiftdeps"
+  },
+  "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/TaskerTests/TaskerTests.swift" : {
+
+  }
+}

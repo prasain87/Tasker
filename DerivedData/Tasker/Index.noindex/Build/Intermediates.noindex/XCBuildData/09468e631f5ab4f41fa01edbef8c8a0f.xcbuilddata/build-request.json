@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "089d12a9366d7530ab7cdf3c16b96a4ecaacfe4a79673d72c8ff725ebd7f32d2"
+    },
+    {
+      "guid" : "089d12a9366d7530ab7cdf3c16b96a4ea56d118a65d78dd0faa5ac1ae2d3e09f"
+    },
+    {
+      "guid" : "089d12a9366d7530ab7cdf3c16b96a4e46dffa6241b8c89a9f180c08afe3cb6f"
+    }
+  ],
+  "containerPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/Tasker.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Build/Products",
+      "pchPath" : "/Users/prateeksujaina/Documents/Workspace/Samples/Tasker/DerivedData/Tasker/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
