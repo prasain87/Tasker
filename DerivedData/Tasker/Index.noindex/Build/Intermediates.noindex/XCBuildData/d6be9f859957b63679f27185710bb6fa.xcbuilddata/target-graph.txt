@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-Target 'Tasker' in project 'Tasker' (no dependencies)
-Target 'Tasker' in project 'Tasker' (no dependencies)
