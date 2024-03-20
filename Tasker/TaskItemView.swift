@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskItemView: View {
-    let item: TaskItemModel
+    @Binding var item: TaskItemModel
     
     var body: some View {
         VStack {
@@ -20,10 +20,10 @@ struct TaskItemView: View {
                     .font(.caption2)
             }
             HStack {
-                Text(item.desc)
+                Text(item.description)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-                    .lineLimit(2)
+                    .lineLimit(1)
                 Spacer()
             }
                 

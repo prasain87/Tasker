@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let taskList: [TaskItemModel]
+    @ObservedObject var model: TaskModel
     
     @State private var selectedFilter: TaskFilterType = .all
     @State private var isPresented = false
@@ -25,11 +25,11 @@ struct ContentView: View {
             .pickerStyle(.segmented)
             .padding([.leading, .trailing], 10)
             
-            let filteredTaskList = taskList.filter({ selectedFilter.taskStatus.contains($0.status) })
-            
-            List(filteredTaskList) { item in
+            List(
+                $model.taskList.filter({ selectedFilter.taskStatus.contains($0.status.wrappedValue) })
+            ) { $item in
                 NavigationLink(value: item) {
-                    TaskItemView(item: item)
+                    TaskItemView(item: $item)
                 }
             }
             .navigationDestination(for: TaskItemModel.self) { item in
@@ -46,7 +46,7 @@ struct ContentView: View {
                             .shadow(radius: 5)
                     }
                     .sheet(isPresented: $isPresented) {
-                        TaskDetailsView(taskModel: nil)
+                        NewTaskView()
                     }
                 }
             }
@@ -55,5 +55,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(taskList: [])
+    ContentView(model: TaskModel.shared)
 }
