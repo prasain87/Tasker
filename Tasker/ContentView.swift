@@ -25,12 +25,15 @@ struct ContentView: View {
             .pickerStyle(.segmented)
             .padding([.leading, .trailing], 10)
             
-            List(
-                $model.taskList.filter({ selectedFilter.taskStatus.contains($0.status.wrappedValue) })
-            ) { $item in
-                NavigationLink(value: item) {
-                    TaskItemView(item: $item)
+            List {
+                ForEach(
+                    $model.taskList.filter({ selectedFilter.taskStatus.contains($0.status.wrappedValue) })
+                ) { $item in
+                    NavigationLink(value: item) {
+                        TaskItemView(item: $item)
+                    }
                 }
+                .onDelete(perform: delete)
             }
             .navigationDestination(for: TaskItemModel.self) { item in
                 TaskDetailsView(taskModel: item)
@@ -51,6 +54,12 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    func delete(at offsets: IndexSet) {
+        let filteredList = model.taskList.filter({ selectedFilter.taskStatus.contains($0.status) })
+        let taskIdSet = Set<String>(offsets.map({ filteredList[$0].id }))
+        model.taskList.removeAll(where: { taskIdSet.contains($0.id) })
     }
 }
 
