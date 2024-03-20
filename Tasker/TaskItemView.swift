@@ -14,7 +14,7 @@ struct TaskItemView: View {
         VStack {
             HStack {
                 Text(item.title)
-                    .font(.headline)
+                    .font(.title2)
                 Spacer()
                 Text(item.status.rawValue)
                     .font(.caption2)
@@ -22,6 +22,7 @@ struct TaskItemView: View {
             HStack {
                 Text(item.desc)
                     .font(.subheadline)
+                    .lineLimit(2)
                 Spacer()
             }
                 
