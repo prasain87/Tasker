@@ -15,9 +15,21 @@ struct ContentView: View {
         TaskModel(title: "Task4", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .todo)
     ]
     
+    @State private var selectedFilter: TaskFilterType = .all
+    
     var body: some View {
         NavigationStack {
-            List(taskList) { item in
+            Picker("Filter", selection: $selectedFilter) {
+                ForEach(TaskFilterType.allCases) { flavor in
+                    Text(flavor.rawValue).tag(flavor)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding([.leading, .trailing], 10)
+            
+            let filteredTaskList = taskList.filter({ selectedFilter.taskStatus.contains($0.status) })
+            
+            List(filteredTaskList) { item in
                 NavigationLink(value: item) {
                     TaskItemView(item: item)
                 }

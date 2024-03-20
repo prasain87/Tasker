@@ -17,6 +17,7 @@
 		1FD263272BA31AE700F9F07A /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD263262BA31AE600F9F07A /* TaskModel.swift */; };
 		1FD263292BA31C7F00F9F07A /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD263282BA31C7F00F9F07A /* TaskItemView.swift */; };
 		1FD2632B2BA322B800F9F07A /* TaskDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2632A2BA322B800F9F07A /* TaskDetails.swift */; };
+		1FD2632D2BAB148E00F9F07A /* TaskFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2632C2BAB148E00F9F07A /* TaskFilterType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1FD263262BA31AE600F9F07A /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		1FD263282BA31C7F00F9F07A /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		1FD2632A2BA322B800F9F07A /* TaskDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetails.swift; sourceTree = "<group>"; };
+		1FD2632C2BAB148E00F9F07A /* TaskFilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilterType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				1FD262FF2BA30BEE00F9F07A /* Preview Content */,
 				1FD263282BA31C7F00F9F07A /* TaskItemView.swift */,
 				1FD2632A2BA322B800F9F07A /* TaskDetails.swift */,
+				1FD2632C2BAB148E00F9F07A /* TaskFilterType.swift */,
 			);
 			path = Tasker;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD2632D2BAB148E00F9F07A /* TaskFilterType.swift in Sources */,
 				1FD263272BA31AE700F9F07A /* TaskModel.swift in Sources */,
 				1FD262FC2BA30BEC00F9F07A /* ContentView.swift in Sources */,
 				1FD263292BA31C7F00F9F07A /* TaskItemView.swift in Sources */,
