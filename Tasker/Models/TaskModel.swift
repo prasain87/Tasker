@@ -15,9 +15,13 @@ class TaskModel: ObservableObject {
     private init() {
         self.taskList = [
             TaskItemModel(title: "Task 1", desc: "Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial.", status: .todo),
-            TaskItemModel(title: "Task 2", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .todo),
+            TaskItemModel(title: "Task 2", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .inProgress),
             TaskItemModel(title: "Task 3", desc: "Dynamic Programming (DP) is defined as a technique that solves.", status: .todo),
-            TaskItemModel(title: "Task 4", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .todo)
+            TaskItemModel(title: "Task 4", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .done),
+            TaskItemModel(title: "Task 5", desc: "Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial.", status: .todo),
+            TaskItemModel(title: "Task 6", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .inProgress),
+            TaskItemModel(title: "Task 7", desc: "Dynamic Programming (DP) is defined as a technique that solves.", status: .todo),
+            TaskItemModel(title: "Task 8", desc: "Dynamic Programming (DP) is defined as a technique that solves some particular type of problems in Polynomial Time.", status: .done)
         ]
 //        if let menuJSON = decodeJSON(data: data){
 //            taskList = menuJSON.tasks

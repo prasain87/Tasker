@@ -27,6 +27,13 @@ struct TaskDetailsView: View {
         VStack {
             TextField("Title", text: $title)
                 .textFieldStyle(.roundedBorder)
+            
+            HStack {
+                Text("Status")
+                    .font(.title3)
+                    .foregroundStyle(.secondary)
+                Spacer()
+            }
             Picker("Status", selection: $selectedStatus) {
                 ForEach(TaskStatus.allCases) { status in
                     Text(status.rawValue).tag(status)
@@ -36,6 +43,7 @@ struct TaskDetailsView: View {
 
             HStack {
                 Text("Description")
+                    .font(.title3)
                     .foregroundStyle(.secondary)
                 Spacer()
             }
@@ -63,9 +71,6 @@ struct TaskDetailsView: View {
     }
     
     func update() {
-//        self.taskModel.title = title
-//        self.taskModel.description = desc
-//        self.taskModel.status = selectedStatus
         TaskModel.shared.updateTask(id: taskModel.id, title: title, description: desc, status: selectedStatus)
     }
 }
