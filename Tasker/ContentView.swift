@@ -38,6 +38,17 @@ struct ContentView: View {
                 TaskDetails(taskModel: item)
             }
             .navigationTitle(Text("Tasker"))
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Label("", systemImage: "plus.square.fill")
+                            .font(.largeTitle)
+                            .shadow(radius: 5)
+                    }
+                }
+            }
         }
     }
 }
