@@ -40,15 +40,3 @@ extension TaskItemModel: Hashable {
         && lhs.status == rhs.status
     }
 }
-
-enum TaskStatus: String, CaseIterable, Codable {
-    case todo = "To Do"
-    case inProgress = "In Progress"
-    case done = "Done"
-}
-
-extension TaskStatus: Identifiable {
-    var id: String {
-        rawValue
-    }
-}
