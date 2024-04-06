@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TaskerApp: App {
+    let model: TaskModel = TaskModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(model: TaskModel.shared)
+            ContentView(model: model)
         }
     }
 }
